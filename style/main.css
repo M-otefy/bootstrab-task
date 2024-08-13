@@ -1,0 +1,1241 @@
+@font-face {
+    font-family: "JosefinSans";
+    src: url("../fonts/JosefinSans-Bold.ttf");
+    /* font-weight: 400; */
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Lato";
+    src: url("../fonts/Lato-Black.ttf");
+    /* font-weight: 400; */
+    font-style: normal;
+    font-display: swap;
+}
+.between-text{
+    gap: 115px;
+}
+#frist-div{
+    background-color: rgba(126, 51, 224, 1);
+    /* padding: 14px 0; */
+}
+#frist-div span{
+    font-size: 16px;
+    color: #F1F1F1;
+    font-family: "JosefinSans";
+    margin-left: 12px;
+}
+:root {
+    --primary: rgba(10, 38, 64, 1);
+    --secondary: #ff5252;
+    --background: #eee;
+    --highlight: #ffda79;
+    --theme: var(--primary);
+  }
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
+  .tab input {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+  }
+  .tab a{
+    color: #F1F1F1;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    font-family: "JosefinSans";
+  }
+  .tab__content {
+    max-height:0;
+    overflow: hidden;
+    transition: all 0.35s;
+    background-color: transparent;
+  }
+  .tab input:checked ~ .tab__content {
+    max-height: 10rem;
+  }
+  .accordion {
+    color: var(--theme);
+    border: 2px solid;
+    border-radius: 0.5rem;
+    overflow: hidden;
+  }
+  .tab__label,
+  .tab__close {
+    display: flex;
+    color: rgba(10, 38, 64, 1);
+    background:transparent;
+    cursor: pointer;
+  }
+  .tab__label {
+    padding: 1rem;
+    color: #F1F1F1;
+    font-family: "JosefinSans";
+  }
+  .tab__label::after {
+    content: "\276F";
+    width: 1em;
+    height: 1em;
+    text-align: center;
+    transform: rotate(90deg);
+    transition: all 0.35s;
+  }
+  .tab input:checked + .tab__label::after {
+    transform: rotate(270deg);
+  }
+  .tab__content a {
+    margin: 0;
+    padding: 1rem;
+  }
+  .tab__close {
+    justify-content: flex-end;
+    padding: 0.5rem 1rem;
+    font-size: 0.75rem;
+  }
+  .accordion--radio {
+    --theme: var(--secondary);
+  }
+  
+  .tab input:not(:checked) + .tab__label:hover::after {
+    animation: bounce .5s infinite;
+  }
+  @keyframes bounce {
+    25% {
+      transform: rotate(90deg) translate(.25rem);
+    }
+    75% {
+      transform: rotate(90deg) translate(-.25rem);
+    }
+  }
+
+nav h3{
+    font-family: "JosefinSans";
+}
+#Search-Bar input{
+    height: 40px;
+    border: 1px solid #E7E6EF; 
+}
+#Search-Bar-icon{
+    width: 50px;
+    height: 40px;
+    background-color: #FB2E86;
+    justify-content: center;
+    align-items: center;
+}
+#navigation-bbar a:hover{
+    color: #FB2E86;
+    transition-duration: 200ms;
+    transition-timing-function: ease-in-out;
+    transition-property: all;
+    text-decoration: underline;
+}
+#sofa img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+#section-1 h1{
+    font-family: "JosefinSans";
+    font-size: 53px;
+    color: #000000;
+}
+
+#section-1 span{
+    color: #FB2E86;
+}
+#section-1 p{
+    color: rgba(138, 143, 185, 1);
+    font-family: "Lato";
+    font-weight: 700;
+}
+#Shop-Now{
+    width: 163px;
+    height: 50px;
+    background-color: #FB2E86;
+    text-align: center;
+    padding: 16px 40px;
+}
+#Shop-Now a{
+    color: rgba(255, 255, 255, 1);
+    text-decoration: none;
+    font-family: "JosefinSans";
+}
+#section-2{
+    margin-bottom: 125px;
+}
+#section-2 h2{
+    font-family: "JosefinSans";
+    font-size: 42px;
+    color: #1A0B5B;
+    margin-bottom: 48px;
+}
+#frist-card{
+    width: 270px;
+    height: 236px;
+    background-color: #F6F7FB;
+}
+#frist-card img{
+    width: 178px;
+    height: 178px;
+    /* padding: 46px 52px 12px 40px; */
+}
+#fr-coler{
+    width: 14px;
+    height: 4px;
+    background-color: #05E6B7;
+    border-radius: 10px;
+    
+}
+#sec-coler{
+    width: 14px;
+    height: 4px;
+    background-color: #F701A8;
+    border-radius: 10px;
+}
+#last-coler{
+    width: 14px;
+    height: 4px;
+    background-color: #00009D;
+    border-radius: 10px;
+}
+.content{
+    width: 270px;
+}
+.content:hover{
+    background-color: #2F1AC4;
+    transition-duration: 200ms;
+    transition-property: all;
+}
+.content h6:hover{
+    color: #F6F7FB;
+}
+.content p:hover{
+    color: #F6F7FB;
+}
+.content span:hover{
+    color: #F6F7FB;
+}
+.content h6{
+    font-size: 18px;
+    color: #FB2E86;
+    font-family: "Lato";
+    font-weight: 700;
+    
+}
+.code{
+    font-size: 14px;
+    color: #151875;
+    text-align: center;
+    font-family: "JosefinSans";
+}
+.price{
+    font-size: 14px;
+    color: #151875;
+    text-align: center;
+    justify-content: center;
+    font-family: "Lato";
+}
+#chair-1{
+    /* box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.1); */
+}
+#chair-2{
+    position: relative;
+    /* box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.1); */
+}
+#chair-3{
+    /* box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.1); */
+}
+#chair-4{
+    /* box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.1); */
+}
+#icons{
+    position: absolute;
+    top: 11px;
+    left: 11px;
+}
+#frist-card-2{
+    width: 270px;
+    height: 236px;
+    background-color: #F7F7F7;
+}
+#frist-card-2 a{
+    /* width: 94px; */
+    height: 29px;
+    border-radius: 2px;
+    background-color: #08D15F;
+    color: #FFFFFF;
+    font-size: 12px;
+    padding: 4px 13px 0px 13px;
+    text-decoration: none;
+}
+#frist-card-2 a:hover{
+    color: #F701A8;
+    transition-duration: 200ms;
+    transition-property: all;
+}
+#frist-card-3{
+    width: 270px;
+    height: 236px;
+    background-color: #F7F7F7;
+}
+#frist-card-4{
+    width: 270px;
+    height: 236px;
+    background-color: #F7F7F7;
+}
+#section-3 h2{
+    font-size: 42px;
+    color: #1A0B5B;
+    margin-bottom: 19px;
+    font-family: "JosefinSans";
+}
+#links-bar{
+    margin-bottom: 58px;
+    gap: 25px;
+}
+#links-bar a{
+    font-size: 18px;
+    color: #151875;
+    text-decoration: none;
+    font-family: "Lato";
+}
+#links-bar a:hover{
+    color: #FB2E86;
+    text-decoration: underline;
+    transition-duration: 200ms;
+    transition-property: all;
+}
+#card-1{
+    width: 360px;
+    height: 270px;
+    background-color: #F7F7F7;
+}
+.pricing{
+    font-size: 16px;
+    color: #151875;
+    font-family: "JosefinSans";
+}
+.line{
+    position: relative;
+    align-items: baseline;
+}
+.line span{
+    font-size: 12px;
+}
+.line h6{
+    font-size: 12px;
+    color: #FB2448;
+}
+.line p{
+    position: absolute;
+    width: 37px;
+    height: 1px;
+    background-color: #FB2448;
+    right: 0;
+    top: 10px;
+}
+#card-2{
+    position: relative;
+    width: 360px;
+    height: 270px;
+}
+#icons-2{
+    position: absolute;
+    top: 146px;
+    left: 15px;
+}
+#card-3{
+    width: 360px;
+    height: 270px;
+    background-color: #F7F7F7;
+}
+#card-2 #sale{
+    position: absolute;
+    left: -10px;
+    bottom: 150px;
+}
+#section-4 h2{
+    font-size: 42px;
+    color: #151875; 
+    font-family: "JosefinSans"; 
+}
+#section-4 span{
+    font-size: 22px;
+    color: #151875;
+    margin-bottom: 27px;
+    font-family: "JosefinSans";
+}
+#section-4 p{
+    font-size: 16px;
+    color: #1A0B5B4D;
+    text-align: center;
+    font-family: "Lato";
+}
+.shadwo{
+    box-shadow: 0px 8px 40px 0px #31208A0D;
+}
+#section-5 h2{
+    font-size: 35px;
+    color: #151875;
+    padding-top: 82px;
+    font-family: "JosefinSans";
+}
+#section-5 p{
+    font-size: 16px;
+    color: #ACABC3;
+    font-family: "Lato";
+}
+#section-5 a{
+    padding: 14px 24px;
+    background-color: #FB2E86;
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 17px;
+    font-family: "JosefinSans";
+}
+#section-5 h6{
+    color: #151875;
+    font-size: 14px;
+    font-family: "JosefinSans";
+}
+#section-5 span{
+    font-size: 14px;
+    color: #151875;
+}
+#section-6 h2{
+    font-size: 42px;
+    color: #151875;
+    font-family: "JosefinSans";
+}
+.Trending{
+    /* width: 270px; */
+    height: 350px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 8px 40px 0px #31208A0D;
+}
+.Trending h5{
+    font-size: 16px;
+    color: #151875;
+    font-family: "Lato";
+    font-weight: 700;
+}
+.Trending h6{
+    font-size: 14px;
+    color: #151875;
+}
+.Trending span{
+    font-size: 14px;
+    color: #1518754D;
+}
+.discuont{
+    position: relative;
+}
+.discuont p{
+    position: absolute;
+    width: 37px;
+    height: 1px;
+    background-color: #1518754D;
+    top: 10px;
+    right: 0;
+}
+#clock{
+    /* width: 420px; */
+    height: 270px;
+    position: relative;
+    box-shadow: 0px 8px 40px 0px #31208A0D;
+    background-color: #FFF6FB;
+}
+#clock h3{
+    font-size: 26px;
+    color: #151875;
+    font-family: "JosefinSans";
+    font-weight: 600;
+}
+#clock a{
+    font-size: 16px;
+    text-decoration: none;
+}
+#clock a:hover{
+    color: #FB2E86;
+    transition-duration: 200ms;
+    transition-property: all;
+    text-decoration: underline;
+}
+#clock img{
+    position: absolute;
+    right: 6px;
+    top: 61px;
+}
+#Collection{
+    /* width: 420px; */
+    height: 270px;
+    position: relative;
+    box-shadow: 0px 8px 40px 0px #31208A0D;
+    background-color: #EEEFFB;
+}
+#Collection h3{
+    font-size: 26px;
+    color: #151875;
+    font-family: "JosefinSans";
+    font-weight: 600;
+}
+#Collection a{
+    font-size: 16px;
+    text-decoration: none;
+}
+#Collection a:hover{
+    color: #FB2E86;
+    transition-duration: 200ms;
+    transition-property: all;
+    text-decoration: underline;
+}
+.chair-price{
+    width: 107px;
+    height: 74px;
+    background-color: #F5F6F8;
+}
+.ChairPriceing{
+    position: relative;
+}
+.ChairPriceing h6{
+    font-size: 16px;
+    color: #151875;
+    font-family: "JosefinSans";
+}
+.ChairPriceing span{
+    font-size: 12px;
+    color: #151875;
+    font-family: "JosefinSans";
+}
+.ChairPriceing p{
+    position: absolute;
+    width: 37px;
+    height: 1px;
+    background-color: #151875;
+    top: 36px;
+    left: 0;
+}
+#section-7 h2{
+    font-size: 42px;
+    color: #151875;
+    font-family: "JosefinSans";
+}
+#catigories a{
+    font-size: 18px;
+    color: #151875;
+    text-decoration: none;
+    font-family: "Lato";
+    font-weight: 400;
+}
+#catigories a:hover{
+    color: #FB4997;
+    text-decoration: underline;
+    transition-duration: 200ms;
+    transition-property: all;
+}
+#section-7 h3{
+    font-size: 35px;
+    color: #151875;
+    font-family: "JosefinSans";
+}
+#section-7 h4{
+    font-size: 21px;
+    color: #FB2E86;
+    font-family: "JosefinSans";
+}
+#section-7 p{
+    font-size: 17px;
+    color: #B7BACB;
+    font-family: "Lato";
+    font-weight: 400;
+}
+#section-7 span{
+    font-size: 16px;
+    color: #B8B8DC;
+    font-family: "Lato";
+    font-weight: 400;
+}
+.ShopNow a{
+    font-size: 17px;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 12px 40px;
+    background-color: #FB2E86;
+    font-family: "JosefinSans";
+}
+#section-8 h2{
+    font-size: 42px;
+    color: #151875;
+    font-family: "JosefinSans";
+}
+.circle-1{
+    position: relative;
+    width: 269px;
+    height: 269px;
+    border-radius: 50%;
+    background-color: #F6F7FB;
+    box-shadow: 0px 8px 40px 0px #31208A0D;
+}
+.circle-1:hover{
+    background-color: #9877E7;
+    transform:translatey(-10%);
+    transition-property: all;
+    transition-duration: 2s;
+}
+.circle-1 a{
+    font-size: 12px;
+    padding: 8px 18px;
+    color: #FFFFFF;
+    text-decoration: none;
+    background-color: #08D15F;
+}
+#section-8 h6{
+    font-size: 20px;
+    color: #151875;
+    font-family: "JosefinSans";
+}
+#section-8 span{
+    font-size: 16px;
+    color: #151875;
+    font-family: "JosefinSans";
+}
+#section-9{
+    margin-top: 125px;
+    background-position: 50%;
+    height: 460px;
+    background-image: url(../imags/Rectangle\ 102.png);
+    background-repeat: no-repeat;
+}
+#section-9 h2{
+    font-size: 35px;
+    color: #151875;
+    line-height: 54px;
+    padding-top: 174px;
+    font-family: "JosefinSans";
+}
+.blogs{
+    box-shadow: 0px 8px 40px 0px #31208A0D;
+}
+#section-11 h2{
+    font-size: 42px;
+    color: #151875;
+    font-family: "JosefinSans";
+}
+#section-11 span{
+    font-size: 14px;
+    color: #151875;
+    font-family: "JosefinSans";
+}
+#section-11 h3{
+    font-size: 18px;
+    color: #151875;
+    font-family: "JosefinSans";
+}
+#section-11 h3:hover{
+    color: #FB2E86;
+}
+#section-11 p{
+    font-size: 16px;
+    color: #72718F;
+    font-family: "Lato";
+    font-weight: 400;
+}
+.read-more{
+    color: #151875;
+    font-size: 16px;
+    font-family: "Lato";
+    font-weight: 400;
+}
+.read-more:hover{
+    color: #FB2E86;
+}
+footer{
+    background-color: #EEEFFB;
+}
+footer h2{
+    font-size: 38px;
+    color: #000000;
+    font-family: "JosefinSans";
+}
+footer input{
+    color: #8A8FB9;
+    padding: 14px 0 11px 20px;
+    height: 44px;
+    width: 377px;
+    background-color: #FFFFFF;
+    border: none;
+}
+#Sign-up{
+    position: relative;
+}
+#Sign-up a{
+    position: absolute;
+    font-size: 16px;
+    color: #EEEFFB;
+    text-decoration: none;
+    background-color: #FB2E86;
+    padding: 11px 40px 9px 39px;
+    right: 170px;
+}
+footer span{
+    font-size: 16px;
+    color: #8A8FB9;
+    font-family: "Lato";
+}
+footer p{
+    font-size: 16px;
+    color: #8A8FB9;
+    font-family: "Lato";
+}
+footer h6{
+    font-size: 18px;
+    color: #000000;
+    font-family: "JosefinSans";
+}
+footer li{
+    font-size: 14px;
+}
+footer li a{
+    text-decoration: none;
+    color: #8A8FB9;
+    font-family: "Lato";
+}
+footer li a:hover{
+    color: #FB2E86;
+    transition-duration: 200ms;
+    transition-property: all;
+}
+#section-12{
+    background-color: #E7E4F8;
+}
+#section-12 span{
+    font-size: 16px;
+    color:#9DA0AE;
+}
+@media screen and (max-width:1400px) {
+    .between-text{
+        gap: 95px;
+    }
+    #Shop-Now{
+        padding: 5px 30px;
+    }
+    #sec-three{
+        margin-top: 25px;
+    }
+    #clock{
+        padding: 15px;
+    }
+    #Collection{
+        padding: 15px;
+    }
+    #three-div > div{
+        gap: 24px;
+    }
+}
+@media screen and (max-width:1200px) {
+    #Shop-Now{
+        padding: 8px 30px;
+    }
+    #icons{
+        left: 110px;
+    }
+    #fr-three{
+        justify-content: center;
+    }
+    #sixCards-card-3{
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+    #sec-three{
+        justify-content: center;
+    }
+    #sofa-1 img{
+        width: 400px;
+    }
+    #sofa img{
+        width: 300px;
+    }
+    #clock{
+        padding: 15px;
+    }
+    #Collection img{
+        width: 200px;
+    }
+    #Collection{
+        padding: 15px;
+    }
+    #three-div > div{
+        gap: 24px;
+    }
+    #section-7 span{
+        font-size: 14px;
+    }
+    .ShopNow a{
+        font-size: 14px;
+        padding: 10px 30px;
+    }
+    #three-div{
+        margin: 0;
+    }
+    .circles{
+        margin-top: 25px;
+    }
+    #Sign-up a{
+        right: 80PX;
+    }
+    .link-bord li{
+        font-size: 12px;
+    }
+    #section-5 a{
+        padding: 10px 20px;
+    }
+    #copy-right{
+        display: flex;
+        justify-content: center;
+    }
+    #last-icon{
+        justify-content: center;
+    }
+}
+@media screen and (max-width:992px) {
+    .between-text{
+        gap: 80px;
+    }
+    #section-1 h1{
+        font-size: 48px;
+    }
+    #Shop-Now{
+        padding: 8px 30px;
+        font-size: 14px;
+    }
+    #fr-three{
+        justify-content: center;
+    }
+    #sec-three{
+        justify-content: center;
+    }
+    #sixCards-card-1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #sixCards-card-2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .middel-card{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #sixCards-card-3{
+        margin-top: 25px;
+    }
+    #sofa-1{
+        display: flex;
+        justify-content: center;
+    }
+    #sofa-1 img{
+        width: 400px;
+    }
+    #clock{
+        padding: 15px;
+    }
+    #clock h3{
+        font-size: 22px;
+    }
+    #clock img{
+        width: 200px;
+    }
+    #Collection{
+        padding: 15px;
+        margin-bottom: 30px;
+    }
+    #Collection h3{
+        font-size: 22px;
+    }
+    #Collection img{
+        width: 200px;
+    }
+    #three-div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #discuont{
+        align-items: center;
+    }
+    #sofa{
+        display: flex;
+        justify-content: center;
+    }
+    #sofa img{
+        width: 300px;
+    }
+    #section-9 h2{
+        font-size: 32px;
+    }
+    .ShopNow a{
+        font-size: 12px;
+        padding: 10px 30px;
+    }
+    #logos img{
+        width: 500px;
+    }
+    #three-card-3{
+        justify-content: center;
+    }
+    #Sign-up a{
+        right: 0;
+    }
+    #heading-1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .circles{
+        margin-top: 25px;
+    }
+    #section-7 p{
+        text-align: center;
+    }
+    #last-section{
+        justify-content: space-between;
+    }
+
+}
+@media screen and (max-width:768px) {
+    #Login{
+        display: none;
+    }
+    #Wishlist{
+        display: none;
+    }
+    #cart{
+        display: none;
+    }
+    #section-1 h1{
+        font-size: 28px;
+    }
+    #section-1 p{
+        font-size: 14px;
+    }
+    #Shop-Now{
+        font-size: 14px;
+        padding: 5px 25px;
+    }
+    #icons{
+        left: 140px;
+    }
+    #fr-three{
+        justify-content: center;
+    }
+    #sixCards-card-3{
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+    #sec-three{
+        justify-content: center;
+    }
+    #section-5 a{
+        padding: 12px 20px;
+        font-size: 14px;
+    }
+    #three-div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 30px;
+    }
+    #discuont{
+        align-items: center;
+    }
+    #section-7 p{
+        text-align: center;
+    }
+    #section-9 h2{
+        text-align: center;
+    }
+    .ShopNow a{
+        font-size: 14px;
+        padding: 10px 30px;
+    }
+    #logos img{
+        width: 300px;
+    }
+    #three-card-3{
+        justify-content: center;
+    }
+    #three-card-1{
+        margin-top: 25px;
+    }
+    #heading-1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #Sign-up a{
+        right: 0;
+    }
+    footer p{
+        margin-bottom: 25px;
+    }
+    #copy-right{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    #last-icon{
+        display: flex;
+        justify-content: center;
+    }
+    
+}
+@media screen and (max-width:576px) {
+    .between-text{
+        gap: 45px;
+    }
+    .g-5, .gx-5 {
+        --bs-gutter-x: 0;
+    }
+    #Login{
+        display: none;
+    }
+    #Wishlist{
+        display: none;
+    }
+    #cart{
+        display: none;
+    }
+    #section-1 h1{
+        font-size: 36px;
+        text-align: center;
+    }
+    #heading{
+        align-items: center;
+    }
+    #section-1 p{
+        text-align: center;
+    }
+    #section-2 h2{
+        font-size: 38px;
+    }
+    #icons{
+        left: 180px;
+    }
+    #section-3 h2{
+        font-size: 38px;
+    }
+    #links-bar{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .six-cards{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #section-4 h2{
+        font-size: 38px;
+    }
+    #sofa-1{
+        width: 100%;
+    }
+    #sofa-1 img{
+        width: 100%;
+    }
+    #section-7 h2{
+        font-size: 38px;
+    }
+    #section-7 h3{
+        font-size: 32px;
+    }
+    #section-7 p{
+        text-align: center;
+    }
+    #discuont{
+        align-items: center;
+    }
+    #section-8 h2{
+        font-size: 38px;
+    }
+    .circles{
+        margin-bottom: 25px;
+    }
+    #section-9 h2{
+        font-size: 32px;
+        text-align: center;
+    }
+    .ShopNow a{
+        padding: 10px 35px;
+    }
+    #logos img{
+        width: 300px;
+    }
+    #section-11 h2{
+        font-size: 38px;
+    }
+    #section-11 img{
+        width: 300px;
+    }
+    .three-card{
+        align-items: center;
+        padding-top: 25px;
+    }
+    .content-1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #section-11 p{
+        text-align: center;
+    }
+    #three-div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 30px;
+    }
+    #heading-1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #Sign-up a{
+        right: 0;
+    }
+    footer p{
+        margin-bottom: 25px;
+    }
+    .link-bord h6{
+        font-size: 14px;
+    }
+    .link-bord li{
+        font-size: 12px;
+    }
+    #copy-right{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    #last-icon{
+        display: flex;
+        justify-content: center;
+    }
+    
+}
+@media screen and (max-width:320px) {
+    #Login{
+        display: none;
+    }
+    #Wishlist{
+        display: none;
+    }
+    #cart{
+        display: none;
+    }
+    #sofa img{
+        width: 200px;
+    }
+    #heading{
+        margin-bottom: 25px;
+    }
+    #section-2 h2{
+        font-size: 24px;
+    }
+    #icons{
+        left: 40px;
+    }
+    #section-3 h2{
+        font-size: 24px;
+    }
+    #links-bar{
+        gap: 10px;
+    }
+    #card-1{
+        width: 300px;
+    }
+    #card-1 img{
+        width: 200px;
+        height: 200px;
+        object-fit: contain;
+    }
+    #card-2{
+        width: 300px;
+    }
+    #card-2 img{
+        width: 200px;
+        height: 200px;
+        object-fit: contain;
+    }
+    #card-3{
+        width: 300px;
+    }
+    #card-3 img{
+        width: 200px;
+        height: 200px;
+        object-fit: contain;
+    }
+    #section-4 h2{
+        font-size: 24px;
+    }
+    #section-5 h2{
+        font-size: 24px;
+    }
+    #section-5 p{
+        font-size: 14px;
+    }
+    #section-6 h2{
+        font-size: 24px;
+    }
+    #section-7 h2{
+        font-size: 24px;
+    }
+    #catigories a{
+        font-size: 11px;
+    }
+    #section-7 h3{
+        font-size: 22px;
+    }
+    #section-8 h2{
+        font-size: 24px;
+    }
+    #section-9 h2{
+        font-size: 24px;
+        line-height: 42px;
+    }
+    #section-11 h2{
+        font-size: 24px;
+    }
+    footer input{
+        width: 300px;
+    }
+    #Sign-up a{
+        right: 0;
+    }
+    footer p{
+        text-align: center;
+        font-size: 14px;
+    }
+    .link-bord{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+     .link-bord ul{
+        align-items: center;
+     }
+    #link-bord-bord{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
