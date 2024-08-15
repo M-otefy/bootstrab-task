@@ -110,6 +110,7 @@
     }
   }
 
+
 nav h3{
     font-family: "JosefinSans";
 }
@@ -800,6 +801,21 @@ footer li a:hover{
     }
 }
 @media screen and (max-width:992px) {
+    #navigation-bbar{
+        position: absolute;
+        z-index: 11111;
+        background: fuchsia;
+        align-items: center;
+        width: 100%;
+        left: 0;
+    }
+    #navigation-bbar ul{
+        align-items: center;
+        color: #F1F1F1;
+    }
+    #navigation-bbar a{
+        color: #F1F1F1;
+    }
     .between-text{
         gap: 80px;
     }
@@ -1035,6 +1051,15 @@ footer li a:hover{
         flex-direction: column;
         align-items: center;
     }
+    #card-1{
+        width: 100%;
+    }
+    #card-2{
+        width: 100%;
+    }
+    #card-3{
+        width: 100%;
+    }
     .six-cards{
         display: flex;
         flex-direction: column;
@@ -1106,17 +1131,34 @@ footer li a:hover{
         flex-direction: column;
         align-items: center;
     }
+    #heading-1 p{
+        text-align: center;
+    }
     #Sign-up a{
         right: 0;
+    }
+    footer input{
+        width: 317px;
     }
     footer p{
         margin-bottom: 25px;
     }
+    #link-bord-bord{
+        flex-direction: column;
+        align-items: center;
+    }
     .link-bord h6{
         font-size: 14px;
+        text-align: center;
     }
     .link-bord li{
         font-size: 12px;
+    }
+
+    .link-bord ul{
+        flex-direction: column;
+        align-items: center;
+
     }
     #copy-right{
         display: flex;
@@ -1131,6 +1173,9 @@ footer li a:hover{
     
 }
 @media screen and (max-width:320px) {
+    .g-5, .gx-5 {
+        --bs-gutter-x: 0;
+    }
     #Login{
         display: none;
     }
