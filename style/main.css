@@ -1072,6 +1072,9 @@ footer li a:hover{
     #card-3{
         width: 100%;
     }
+    #card-3 img{
+        width: 100%;
+    }
     .six-cards{
         display: flex;
         flex-direction: column;
