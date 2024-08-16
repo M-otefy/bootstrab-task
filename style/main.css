@@ -1012,11 +1012,23 @@ footer li a:hover{
     
 }
 @media screen and (max-width:576px) {
+    #section-2 .row{
+        --bs-gutter-x: 0;
+    }
+    #section-3 .row{
+        --bs-gutter-x: 0;
+    }
+    #section-4 .row{
+        --bs-gutter-x: 0;
+    }
+    #section-6 .row{
+        --bs-gutter-x: 0;
+    }
+    #section-8 .row{
+        --bs-gutter-x: 0;
+    }
     .between-text{
         gap: 45px;
-    }
-    .g-5, .gx-5 {
-        --bs-gutter-x: 0;
     }
     #Login{
         display: none;
@@ -1074,11 +1086,18 @@ footer li a:hover{
     #sofa-1 img{
         width: 100%;
     }
+    #section-5 h2{
+        text-align: center;
+    }
     #section-7 h2{
         font-size: 38px;
     }
+    #catigories a{
+        font-size: 13px;
+    }
     #section-7 h3{
         font-size: 32px;
+        text-align: center;
     }
     #section-7 p{
         text-align: center;
@@ -1154,7 +1173,6 @@ footer li a:hover{
     .link-bord li{
         font-size: 12px;
     }
-
     .link-bord ul{
         flex-direction: column;
         align-items: center;
@@ -1169,6 +1187,9 @@ footer li a:hover{
     #last-icon{
         display: flex;
         justify-content: center;
+    }
+    #lamp img{
+        width: 100%;
     }
     
 }
